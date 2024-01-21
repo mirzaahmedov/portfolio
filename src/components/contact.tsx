@@ -42,8 +42,8 @@ function Contact() {
               return;
             }
             toast.success("Email sent successfully");
-          } catch (error) {
-            console.log(error);
+          } catch {
+            toast.error("Something went wrong");
           }
         }}
       >
