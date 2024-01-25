@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaTelegramPlane } from "react-icons/fa";
 import useSectionNavigation from "@/hooks/use-section-navigation";
 import profileImg from "@/assets/profile.jpg";
 
@@ -85,6 +85,14 @@ function Intro() {
         >
           Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+        </a>
+        <a
+          href="https://linkedin.com/in/mirzaahmedov"
+          target="_blank"
+          className="flex items-center gap-2 bg-white text-gray-700 hover:text-gray-950 p-4 rounded-full outline-none 
+          focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
+        >
+          <FaTelegramPlane />
         </a>
         <a
           href="https://linkedin.com/in/mirzaahmedov"
