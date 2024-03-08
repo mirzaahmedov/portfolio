@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 import { Toaster } from "react-hot-toast";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import GoogleAnalytics from "./analytics";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,7 +36,12 @@ export default function RootLayout({
 
         <Toaster position="top-right" />
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          <>
+            <GoogleTagManager
+              gtmId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}
+            />
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          </>
         ) : null}
       </body>
     </html>
