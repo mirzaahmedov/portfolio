@@ -36,12 +36,12 @@ export default function RootLayout({
 
         <Toaster position="top-right" />
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-          <>
-            <GoogleTagManager
-              gtmId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}
-            />
-            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-          </>
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
+        {process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER ? (
+          <GoogleTagManager
+            gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER}
+          />
         ) : null}
       </body>
     </html>
