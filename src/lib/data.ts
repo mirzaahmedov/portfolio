@@ -97,7 +97,7 @@ export const projectsData = [
       "React Query",
     ],
     imageUrl: zipfyImg,
-    href: "https://zipfy.uz",
+    href: "https://zipfy.xyz",
   },
 ] as const;
 
