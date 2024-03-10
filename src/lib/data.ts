@@ -2,6 +2,7 @@ import { createElement } from "react";
 import { FaReact } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 import babyblissImg from "@/assets/babybliss.png";
+import zipfyImg from "@/assets/zipfy.png";
 
 export const links = [
   {
@@ -78,6 +79,23 @@ export const projectsData = [
       "React form hook",
     ],
     imageUrl: babyblissImg,
+  },
+  {
+    title: "Zipfy",
+    description:
+      "Zipfy, my side project, is a concise URL shortener for easy link sharing.",
+    tags: [
+      "Golang",
+      "Echo",
+      "PostgreSQL",
+      "Redis",
+      "AWS",
+      "AWS E2C",
+      "React",
+      "React hooks",
+      "React Query",
+    ],
+    imageUrl: zipfyImg,
   },
 ] as const;
 
