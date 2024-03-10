@@ -79,6 +79,7 @@ export const projectsData = [
       "React form hook",
     ],
     imageUrl: babyblissImg,
+    href: "https://babybliss.uz",
   },
   {
     title: "Zipfy",
@@ -96,6 +97,7 @@ export const projectsData = [
       "React Query",
     ],
     imageUrl: zipfyImg,
+    href: "https://zipfy.uz",
   },
 ] as const;
 

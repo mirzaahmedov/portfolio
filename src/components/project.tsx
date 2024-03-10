@@ -11,7 +11,7 @@ type ProjectProps = {
 function Project({ project }: ProjectProps) {
   const { title, description, tags, imageUrl } = project;
 
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLAnchorElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -21,13 +21,15 @@ function Project({ project }: ProjectProps) {
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <motion.div
+    <motion.a
+      target="_blank"
+      href={project.href}
       ref={containerRef}
       style={{
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="block group mb-3 sm:mb-8 last:mb-0"
     >
       <section
         className="relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden 
@@ -56,7 +58,7 @@ function Project({ project }: ProjectProps) {
           group-hover:scale-105 transition group-even:group-hover:translate-x-3 group-even:group-hover:rotate-2"
         />
       </section>
-    </motion.div>
+    </motion.a>
   );
 }
 
