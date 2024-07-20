@@ -2,6 +2,7 @@ import { createElement } from "react";
 import { FaReact } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 import babyblissImg from "@/assets/babybliss.png";
+import truckgptImg from "@/assets/truckgpt.jpg";
 import zipfyImg from "@/assets/zipfy.png";
 
 export const links = [
@@ -66,6 +67,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "TruckGPT",
+    description:
+      "App to book a trip with multiple loads. and get an optimized route and earn more in less time.",
+    tags: ["React", "NextJs", "Shadcn", "Tailwind CSS", "Prisma"],
+    imageUrl: truckgptImg,
+    href: "https://truckgpt.dev",
+  },
   {
     title: "BabyBliss",
     description:
