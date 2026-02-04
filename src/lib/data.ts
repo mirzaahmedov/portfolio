@@ -1,7 +1,8 @@
-import { createElement } from "react";
 import { FaReact } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 import babyblissImg from "@/assets/babybliss.png";
+import { createElement } from "react";
+import lotinchaImg from "@/assets/lotincha.png";
 import truckgptImg from "@/assets/truckgpt.jpg";
 import zipfyImg from "@/assets/zipfy.png";
 
@@ -64,6 +65,14 @@ export const experiencesData = [
     icon: createElement(FaReact),
     date: "2024",
   },
+  {
+    title: "Front-End Developer",
+    location: "Smart-Base LTD",
+    description:
+      "Independently spearheaded the end-to-end development of web and desktop applications. Engineered a cross-platform desktop suite using Electron, React, and Vite, managing the entire software development lifecycle from initial architecture to final deployment and maintenance.",
+    icon: createElement(FaReact),
+    date: "2024 - 2026",
+  },
 ] as const;
 
 export const projectsData = [
@@ -107,6 +116,21 @@ export const projectsData = [
     ],
     imageUrl: zipfyImg,
     href: "https://zipfy.xyz",
+  },
+  {
+    title: "Lotincha.uz",
+    description:
+      "Lotincha.uz is a web application that converts Cyrillic text to Latin script and vice versa.",
+    tags: [
+      "Nextjs",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React hooks",
+      "Vite",
+    ],
+    imageUrl: lotinchaImg,
+    href: "https://lotincha.uz",
   },
 ] as const;
 

@@ -1,13 +1,14 @@
 "use client";
 
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { FaGithub, FaTelegramPlane } from "react-icons/fa";
+
+import { HiDownload } from "react-icons/hi";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithub, FaTelegramPlane } from "react-icons/fa";
-import useSectionNavigation from "@/hooks/use-section-navigation";
 import profileImg from "@/assets/profile.jpg";
+import useSectionNavigation from "@/hooks/use-section-navigation";
 
 function Intro() {
   const { ref: containerRef } = useSectionNavigation({
@@ -58,7 +59,7 @@ function Intro() {
       >
         <span className="font-bold">Hello, I&apos;m Bekzod.</span> I&apos;m a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2+ years</span> of experience. I enjoy
+        <span className="font-bold">3.5+ years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">ReactJS</span>.
       </motion.h1>
